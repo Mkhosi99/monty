@@ -103,10 +103,10 @@ void mk_rotr(stack_t **dubly, unsigned int mline);
 void (*fecth_opcdes(char *opcde))(stack_t **stac, unsigned int line_numb);
 
 int mk_sch(char *d, char f);
-char *mk_strtoky(char *d, char *f);
+char *mk_strtok(char *d, char *f);
 void *mk_realloc(void *pter, unsigned int ol_sze, unsigned int nw_sze);
 void *mk_calloc(unsigned int Nmembr, unsigned int sze);
-int mk_strcmp(char *st1, char *st2);
+int mk_strcmpre(char *st1, char *st2);
 
 stack_t *addNde_end(stack_t **top, const int m);
 stack_t *addNde(stack_t **top, const int m);
