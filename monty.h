@@ -100,7 +100,7 @@ void mk_pstr(stack_t **dubly, unsigned int mline);
 void mk_rotl(stack_t **dubly, unsigned int mline);
 void mk_rotr(stack_t **dubly, unsigned int mline);
 
-void (*fecth_opcdes(char *opcde))(stack_t **stac, unsigned int line_numb);
+void (*fetch_opcdes(char *opcde))(stack_t **stac, unsigned int line_numb);
 
 int mk_sch(char *d, char f);
 char *mk_strtok(char *d, char *f);
