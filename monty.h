@@ -82,6 +82,12 @@ typedef struct instruction_s
 extern glob_t mglob;
 
 /* Used Function prototypes */
+stack_t *addNde_end(stack_t **top, const int n);
+stack_t *addNde(stack_t **top, const int n);
+void freeLst(stack_t *top);
+
+void free_mglob(void);
+
 void mk_push(stack_t **stac, unsigned int line_numb);
 void mk_pall(stack_t **stac, unsigned int line_numb);
 void mk_pint(stack_t **dubly, unsigned int mline);
@@ -107,11 +113,5 @@ char *mk_strtok(char *d, char *f);
 void *mk_realloc(void *pter, unsigned int ol_sze, unsigned int nw_sze);
 void *mk_calloc(unsigned int Nmembr, unsigned int sze);
 int mk_strcmpre(char *st1, char *st2);
-
-stack_t *addNde_end(stack_t **top, const int n);
-stack_t *addNde(stack_t **top, const int n);
-void freeLst(stack_t *top);
-
-void free_mglob(void);
 
 #endif /* __MONTY_H__ */
